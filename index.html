@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta property="og:image" content=""/>
   <body>
     <script>
       const rats = ["https://pbs.twimg.com/media/Ed6vDTBX0AESH40?format=jpg&name=small",
@@ -45,8 +47,9 @@
 "https://cdn.discordapp.com/attachments/737822944599998507/737824223485100122/image0.jpg",
 "https://cdn.discordapp.com/attachments/737822944599998507/737824150860726322/image0.jpg",
 "https://cdn.discordapp.com/attachments/737822944599998507/737824104769519656/image0.jpg",
-"https://cdn.discordapp.com/attachments/737822944599998507/737824070829080706/image0.jpg"];
-window.location.replace(rats[Math.floor(Math.random()*rats.length)]);
+"https://cdn.discordapp.com/attachments/737822944599998507/737824070829080706/image0.jpg"
+                   ];
+      document.getElementsByTagName("meta")["og:image"].content = rats[Math.floor(Math.random()*rats.length)];
       </script>
   </body>
 </html>
